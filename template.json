@@ -91,7 +91,7 @@
             "type": "Microsoft.Sql/servers/databases",
             "apiVersion": "2017-03-01-preview",
             "name": "[concat(concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), '/tailspindatabase')]",
-            "location": "[parameters('location')]",
+            "location": "West Europe",
             "dependsOn": [
                 "[resourceId('Microsoft.Sql/servers', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')))]"
             ],
